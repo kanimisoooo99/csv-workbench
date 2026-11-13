@@ -1,0 +1,339 @@
+
+.app {
+  width: min(1120px, calc(100% - 48px));
+  margin: 0 auto;
+  padding: 64px 0 80px;
+  color: #202938;
+}
+
+/* Header */
+
+.header {
+  margin-bottom: 40px;
+  padding-bottom: 28px;
+  border-bottom: 1px solid #e4e7ec;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 30px;
+  font-weight: 700;
+  letter-spacing: -1px;
+  color: #1e293b;
+}
+
+.header p {
+  margin: 9px 0 0;
+  color: #7b8492;
+  font-size: 14px;
+  letter-spacing: 0.1px;
+}
+
+/* Sections */
+
+.upload-section,
+.file-section,
+.data-section {
+  background: #ffffff;
+  border: 1px solid #e5e8ee;
+  border-radius: 10px;
+  padding: 28px 30px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 8px rgba(30, 41, 59, 0.025);
+}
+
+h2 {
+  margin: 0;
+  font-size: 17px;
+  font-weight: 600;
+  color: #273449;
+  letter-spacing: -0.3px;
+}
+
+/* Upload */
+
+.upload-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.upload-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 11px 19px;
+  background: #263b63;
+  color: #ffffff;
+  border-radius: 6px;
+  font-size: 13px;
+  font-weight: 600;
+  transition: background 0.2s;
+  cursor: pointer;
+}
+
+.upload-button:hover {
+  background: #344f7c;
+}
+
+.upload-button input {
+  display: none;
+}
+
+/* File list */
+
+.data-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.data-heading span {
+  display: block;
+  margin-top: 6px;
+  color: #87909e;
+  font-size: 12px;
+}
+
+.file-list {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0 0;
+}
+
+.file-list li {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 15px 4px;
+  border-bottom: 1px solid #edf0f3;
+}
+
+.file-list li:last-child {
+  border-bottom: none;
+}
+
+.file-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
+  flex-shrink: 0;
+  border-radius: 7px;
+  background: #edf2fa;
+  color: #344f7c;
+  font-size: 10px;
+  font-weight: 700;
+}
+
+.file-info {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-width: 0;
+  gap: 5px;
+}
+
+.file-name {
+  color: #344054;
+  font-size: 13px;
+  font-weight: 500;
+  overflow-wrap: anywhere;
+}
+
+.file-count {
+  color: #98a1af;
+  font-size: 11px;
+}
+
+/* Buttons */
+
+.delete-button,
+.clear-button {
+  border: 1px solid #e5e8ee;
+  background: #ffffff;
+  color: #7b8492;
+  border-radius: 5px;
+  padding: 7px 12px;
+  font-size: 12px;
+  transition: all 0.2s;
+}
+
+.delete-button:hover {
+  background: #fff5f5;
+  color: #c24141;
+  border-color: #f1cccc;
+}
+
+.clear-button:hover {
+  background: #f4f6f9;
+  color: #344054;
+}
+
+.download-button {
+  border: none;
+  background: #263b63;
+  color: #ffffff;
+  border-radius: 6px;
+  padding: 11px 18px;
+  font-size: 13px;
+  font-weight: 600;
+  transition: background 0.2s;
+}
+
+.download-button:hover {
+  background: #344f7c;
+}
+
+.download-button:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+/* Filename */
+
+.filename-section {
+  margin-top: 26px;
+}
+
+.filename-section label {
+  display: block;
+  margin-bottom: 9px;
+  color: #475467;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.filename-input-wrapper {
+  display: flex;
+  align-items: center;
+  width: min(100%, 480px);
+  border: 1px solid #dfe3e9;
+  border-radius: 6px;
+  overflow: hidden;
+  transition: border-color 0.2s;
+}
+
+.filename-input-wrapper:focus-within {
+  border-color: #7189b1;
+}
+
+.filename-input-wrapper input {
+  flex: 1;
+  min-width: 0;
+  padding: 11px 13px;
+  border: none;
+  outline: none;
+  color: #344054;
+  background: #ffffff;
+  font-size: 13px;
+}
+
+.filename-input-wrapper span {
+  padding: 11px 13px;
+  background: #f6f7f9;
+  border-left: 1px solid #e5e8ee;
+  color: #87909e;
+  font-size: 12px;
+}
+
+.download-area {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin: 15px 0 24px;
+}
+
+.excel-download-button {
+  background: #28745b;
+}
+
+.excel-download-button:hover {
+  background: #1f604a;
+}
+
+/* Table */
+
+.table-container {
+  overflow-x: auto;
+  margin-top: 20px;
+  border: 1px solid #e9ecf1;
+  border-radius: 6px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  white-space: nowrap;
+  font-size: 13px;
+}
+
+th,
+td {
+  padding: 13px 16px;
+  border-bottom: 1px solid #edf0f3;
+  text-align: left;
+}
+
+th {
+  background: #f7f8fa;
+  color: #667085;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.2px;
+}
+
+td {
+  color: #475467;
+}
+
+tbody tr:last-child td {
+  border-bottom: none;
+}
+
+tbody tr:hover {
+  background: #fafbfc;
+}
+
+/* Other */
+
+.error {
+  color: #c24141;
+  font-size: 13px;
+}
+
+.note {
+  margin-top: 14px;
+  color: #87909e;
+  font-size: 12px;
+}
+
+@media (max-width: 640px) {
+  .app {
+    width: calc(100% - 28px);
+    padding-top: 32px;
+  }
+
+  .header h1 {
+    font-size: 25px;
+  }
+
+  .upload-section,
+  .file-section,
+  .data-section {
+    padding: 20px 17px;
+  }
+
+  .upload-section {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .data-heading {
+    align-items: flex-start;
+  }
+}
